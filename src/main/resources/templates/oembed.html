@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link th:href="@{/css/oembed.css}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-<div class="div_1">
-    <div class="div_2">
-        <div class="header">oEmbed Test</div>
-        <div class="searchBar"><label>
-            <input id="search" class="search" type="text"/>
-            <input class="btn" type="button" value="확인" onclick="search();"/>
-        </label> </div>
+<div class="wrap">
+    <div class="header">
+        <div id="title">
+            oEmbed Test
+        </div>
+        <div id="searchBar">
+            <div id="search-area">
+                <input id="search" type="text">
+                <input id="btn" type="button" value="확인">
+            </div>
+        </div>
     </div>
-    <div class="div_3">
+    <div class="container">
         <div id="content">
+            <table id="table">
+            </table>
         </div>
     </div>
 </div>
-
 <script src="/js/oembed.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
 </html>
